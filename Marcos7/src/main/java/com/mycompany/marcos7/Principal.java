@@ -3,16 +3,19 @@
  */
 
 package com.mycompany.marcos7;
-import java.util.Arrays;
+
 /**
  *
- * @author Alunolab13
+ * @author alunolab13
  */
 public class Principal {
 
     public static void main(String[] args) {
-        Pizza p1 = new Pizza(1, "Frango", 49.90, "Média", 39, Arrays.asList("Frango", "Catupiry", "Molho de Tomate", "Queijo"));
-        Bebida b1 = new Bebida(1, "Coca-Cola", 9.90, 30);
-        //inserção no código
+        Curso c1 = new Curso("111", "Medicina");
+        //Curso c2 = new Curso("222", "Direito");
+        
+        Aluno a1 = new Aluno("Marcos", 123, c1);
+        
+        System.out.println("ALUNO: " + a1.getNome() + " MATRICULA: " + a1.getMatricula() + " CURSO: " + a1.getCurso());
     }
 }
